@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://elitechiro.netlify.app/sitemap.xml
