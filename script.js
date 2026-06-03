@@ -56,6 +56,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const panel = widget.querySelector("#chatPanel");
 
   toggle.addEventListener("click", function () {
-    panel.classList.toggle("open");
-  });
+  panel.classList.toggle("open");
+});
+
+setTimeout(function () {
+  panel.classList.add("open");
+}, 1200);
 });
