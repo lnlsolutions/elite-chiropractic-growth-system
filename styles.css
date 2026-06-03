@@ -656,4 +656,31 @@ nav a:hover {
   }
 }
 
-Next: paste faq.html and I’ll give you the full FAQ page.
+/* ==========================
+   TRUST STRIP
+========================== */
+
+.trust-strip {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 24px;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.trust-strip div {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .trust-strip {
+    gap: 16px;
+    font-size: 14px;
+    padding: 18px;
+  }
+}
