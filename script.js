@@ -5,6 +5,14 @@ function toggleMenu() {
   }
 }
 
+function closeChat() {
+  const panel = document.getElementById("chatPanel");
+  if (panel) {
+    panel.classList.remove("open");
+    sessionStorage.setItem("chatClosed", "true");
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const widget = document.createElement("div");
   widget.className = "chat-widget";
@@ -13,7 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
     <button class="chat-toggle" type="button">Request Care</button>
 
     <div class="chat-panel" id="chatPanel">
-      <h3>Request Appointment Availability</h3>
+
+      <button class="chat-close" type="button" onclick="closeChat()">✕</button>
+
+      <h3>Need Help After An Injury?</h3>
+
       <p>Tell us what you need help with and our team will follow up.</p>
 
       <form name="chat-intake" method="POST" data-netlify="true" action="thank-you.html">
@@ -43,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
           I agree to be contacted by phone, text, or email regarding my appointment request.
         </label>
 
-        <button class="btn primary" type="submit">Request Availability</button>
+        <button class="btn primary" type="submit">Get Help Now</button>
 
         <small>If this is a medical emergency, call 911 immediately.</small>
       </form>
@@ -56,10 +68,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const panel = widget.querySelector("#chatPanel");
 
   toggle.addEventListener("click", function () {
-  panel.classList.toggle("open");
-});
+    panel.classList.toggle("open");
+  });
 
-setTimeout(function () {
-  panel.classList.add("open");
-}, 1200);
+  if (!sessionStorage.getItem("chatClosed")) {
+    setTimeout(function () {
+      panel.classList.add("open");
+    }, 2000);
+  }
 });
