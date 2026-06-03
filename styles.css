@@ -308,15 +308,25 @@ nav a:hover {
   min-height: 120px;
 }
 .consent {
-  display: flex;
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  align-items: start;
   gap: 10px;
+  width: 100%;
+  max-width: 100%;
   font-size: 0.88rem;
+  line-height: 1.5;
   color: var(--gray);
   font-weight: 500 !important;
+  overflow-wrap: anywhere;
 }
+
 .consent input {
-  width: auto;
-  margin-top: 4px;
+  width: 18px !important;
+  height: 18px;
+  margin-top: 3px;
+  margin-left: 0;
+  flex-shrink: 0;
 }
 /* ==========================
    SERVICES
@@ -500,7 +510,8 @@ nav a:hover {
   position: absolute;
   right: 0;
   bottom: 62px;
-  width: 340px;
+  width: 360px;
+  max-width: calc(100vw - 24px);
   background: white;
   border: 1px solid var(--border);
   border-radius: 20px;
