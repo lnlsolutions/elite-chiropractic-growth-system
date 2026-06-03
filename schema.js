@@ -12,13 +12,13 @@ const localBusinessSchema = {
 
   "url": "https://elitechiro.netlify.app",
 
-  "telephone": "+1-313-789-4333",
+  "telephone": "+1-313-644-0440",
 
   "email": "Elitechirocenter1@gmail.com",
 
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "6 Park Ln Blvd",
+    "streetAddress": "6 Park Ln Blvd Bldg #6",
     "addressLocality": "Dearborn",
     "addressRegion": "MI",
     "postalCode": "48126",
