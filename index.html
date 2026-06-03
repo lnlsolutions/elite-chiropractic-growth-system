@@ -1,1 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chiro One Sports & Spine Center | Dearborn Chiropractor</title>
+  <meta
+    name="description"
+    content="Chiro One Sports & Spine Center provides chiropractic care, auto accident injury support, physical therapy, back pain treatment, neck pain treatment, and wellness care in Dearborn, MI."
+  />
+  <meta
+    name="keywords"
+    content="Dearborn chiropractor, car accident chiropractor Dearborn, whiplash treatment Dearborn, back pain chiropractor, neck pain chiropractor, physical therapy Dearborn, Chiro One Sports and Spine Center"
+  />
+  <meta name="author" content="Chiro One Sports & Spine Center" />
+  <meta property="og:title" content="Chiro One Sports & Spine Center | Dearborn Chiropractic Care" />
+  <meta
+    property="og:description"
+    content="Chiropractic care, auto accident injury support, physical therapy, and pain relief services in Dearborn, MI."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://elitechiro.netlify.app/" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <span class="logo-mark">C1</span>
+    <span class="logo-text">Chiro One <b>Sports & Spine</b></span>
+  </a>
+  <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+    ☰
+  </button>
+  <nav id="mainNav">
+    <a href="index.html">Home</a>
+    <a href="auto-accident.html">Auto Accident</a>
+    <a href="chiropractic-services.html">Services</a>
+    <a href="physical-therapy.html">Physical Therapy</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a href="contact.html" class="header-cta">Request Appointment</a>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Dearborn Chiropractic & Injury Care</p>
+    <h1>
+      Recover Faster.<br />
+      Move Better.<br />
+      <span>Feel Like Yourself Again.</span>
+    </h1>
+    <p class="hero-text">
+      Chiro One Sports & Spine Center helps patients with auto accident injuries,
+      back pain, neck pain, headaches, physical therapy, and wellness care through
+      conservative, patient-focused chiropractic treatment.
+    </p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn primary">Request Appointment</a>
+      <a href="auto-accident.html" class="btn secondary">Auto Accident Consultation</a>
+    </div>
+    <div class="trust-row">
+      <span>Auto Accident Care</span>
+      <span>Back & Neck Pain</span>
+      <span>Physical Therapy</span>
+      <span>Wellness Care</span>
+    </div>
+  </div>
+  <div class="hero-card">
+    <h2>What brings you in today?</h2>
+    <p>
+      Start with a quick request and our team will follow up regarding appointment availability.
+    </p>
+    <div class="quick-options">
+      <a href="auto-accident.html">🚗 Auto Accident Injury</a>
+      <a href="back-pain-treatment.html">🦴 Back Pain</a>
+      <a href="neck-pain-treatment.html">💢 Neck Pain</a>
+      <a href="physical-therapy.html">🏥 Physical Therapy</a>
+      <a href="sports-injury-treatment.html">🏃 Sports Injury</a>
+      <a href="contact.html">📅 Request Appointment</a>
+    </div>
+  </div>
+</section>
+<section class="assistant-section">
+  <div>
+    <p class="eyebrow">Quick Patient Intake</p>
+    <h2>Tell Us What You Need Help With.</h2>
+    <p>
+      Whether you were injured in an accident or are dealing with ongoing pain,
+      our quick intake form helps the office understand your concern and follow up quickly.
+    </p>
+  </div>
+  <form name="patient-intake" method="POST" data-netlify="true" action="thank-you.html" class="intake-form">
+    <input type="hidden" name="form-name" value="patient-intake" />
+    <label>What do you need help with?</label>
+    <select name="service_interest" required>
+      <option value="">Select one</option>
+      <option>Auto Accident Injury</option>
+      <option>Back Pain</option>
+      <option>Neck Pain</option>
+      <option>Whiplash</option>
+      <option>Physical Therapy</option>
+      <option>Sports Injury</option>
+      <option>Headaches / Migraines</option>
+      <option>Wellness Adjustment</option>
+      <option>Other</option>
+    </select>
+    <label>How soon would you like to be seen?</label>
+    <select name="urgency" required>
+      <option value="">Select one</option>
+      <option>Today</option>
+      <option>This Week</option>
+      <option>Not Sure Yet</option>
+    </select>
+    <input type="text" name="name" placeholder="Full Name" required />
+    <input type="tel" name="phone" placeholder="Phone Number" required />
+    <input type="email" name="email" placeholder="Email Address" required />
+    <textarea name="message" placeholder="Briefly tell us what is going on"></textarea>
+    <label class="consent">
+      <input type="checkbox" name="sms_consent" value="Yes" required />
+      I agree to be contacted by phone, text, or email regarding my appointment request.
+    </label>
+    <button type="submit" class="btn primary">Send My Request</button>
+    <small>If this is a medical emergency, call 911 immediately.</small>
+  </form>
+</section>
+<section class="section">
+  <div class="section-heading">
+    <p class="eyebrow">Conditions We Help With</p>
+    <h2>Personalized Care For Pain, Injury Recovery, And Mobility.</h2>
+    <p>
+      Since 2009, Chiro One Sports & Spine Center has provided conservative,
+      research-based chiropractic care for patients in Dearborn and surrounding communities.
+    </p>
+  </div>
+  <div class="service-grid">
+    <a href="auto-accident.html" class="service-card">
+      <h3>Auto Accident Injuries</h3>
+      <p>
+        Evaluation and care for accident-related pain, stiffness, whiplash,
+        and mobility concerns after a collision.
+      </p>
+    </a>
+    <a href="back-pain-treatment.html" class="service-card">
+      <h3>Back Pain</h3>
+      <p>
+        Care plans designed to address lower back pain, stiffness, and everyday
+        movement limitations.
+      </p>
+    </a>
+    <a href="neck-pain-treatment.html" class="service-card">
+      <h3>Neck Pain</h3>
+      <p>
+        Support for neck pain, tension, limited range of motion, and discomfort after injury.
+      </p>
+    </a>
+    <a href="physical-therapy.html" class="service-card">
+      <h3>Physical Therapy</h3>
+      <p>
+        Rehabilitation support to help improve strength, mobility, and recovery.
+      </p>
+    </a>
+    <a href="sports-injury-treatment.html" class="service-card">
+      <h3>Sports Injuries</h3>
+      <p>
+        Care for active patients recovering from pain, strain, or injury.
+      </p>
+    </a>
+    <a href="chiropractic-services.html" class="service-card">
+      <h3>Wellness Chiropractic</h3>
+      <p>
+        Ongoing chiropractic care focused on alignment, mobility, and long-term wellness.
+      </p>
+    </a>
+  </div>
+</section>
+<section class="split-section">
+  <div>
+    <p class="eyebrow">Auto Accident Care</p>
+    <h2>Injured In A Car Accident?</h2>
+    <p>
+      Pain after a car accident may not always appear immediately. If you are
+      experiencing neck pain, back pain, headaches, stiffness, soreness, or reduced
+      mobility after a collision, our team can help you understand your next step.
+    </p>
+    <ul class="check-list">
+      <li>Whiplash-related discomfort</li>
+      <li>Neck and back pain after an accident</li>
+      <li>Mobility and stiffness concerns</li>
+      <li>Same-week consultation requests</li>
+      <li>Documentation of accident-related symptoms</li>
+    </ul>
+    <a href="car-accident-chiropractor-dearborn.html" class="btn primary">
+      Learn About Auto Accident Care
+    </a>
+  </div>
+  <div class="info-card">
+    <h3>Priority Accident Intake</h3>
+    <p>
+      Auto accident requests are routed as high-priority inquiries so the office can
+      follow up quickly and help patients understand appointment availability.
+    </p>
+    <span>Website → Intake Form → Office Alert → Follow-Up</span>
+  </div>
+</section>
+<section class="section">
+  <div class="section-heading">
+    <p class="eyebrow">Why Patients Choose Us</p>
+    <h2>Clear Care. Better Communication. A Team That Follows Up.</h2>
+  </div>
+  <div class="feature-grid">
+    <div>
+      <h3>Conservative Chiropractic Care</h3>
+      <p>
+        Focused on safe, non-invasive methods designed to help the body heal and move better.
+      </p>
+    </div>
+    <div>
+      <h3>Auto Accident Injury Support</h3>
+      <p>
+        Care for patients dealing with pain, stiffness, whiplash, and mobility issues after a collision.
+      </p>
+    </div>
+    <div>
+      <h3>Physical Therapy & Rehab</h3>
+      <p>
+        Rehabilitation support for patients working to improve function, strength, and mobility.
+      </p>
+    </div>
+    <div>
+      <h3>Local Dearborn Practice</h3>
+      <p>
+        Conveniently located at 6 Park Ln Blvd in Dearborn, Michigan.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-heading">
+    <p class="eyebrow">Office Information</p>
+    <h2>Schedule Care With Chiro One Sports & Spine Center.</h2>
+  </div>
+  <div class="feature-grid">
+    <div>
+      <h3>Location</h3>
+      <p>6 Park Ln Blvd<br />Dearborn, MI 48126</p>
+    </div>
+    <div>
+      <h3>Call</h3>
+      <p><a href="tel:+13137894333">(313) 789-4333</a></p>
+    </div>
+    <div>
+      <h3>Email</h3>
+      <p><a href="mailto:Elitechirocenter1@gmail.com">Elitechirocenter1@gmail.com</a></p>
+    </div>
+    <div>
+      <h3>Hours</h3>
+      <p>
+        Mon–Thurs: 9:00am – 5:00pm<br />
+        Friday: 9:30am – 2:30pm<br />
+        Sat–Sun: Closed
+      </p>
+    </div>
+  </div>
+</section>
+<section class="cta-section">
+  <div>
+    <p class="eyebrow">Request Care</p>
+    <h2>Ready To Take The Next Step?</h2>
+    <p>
+      Send a quick appointment request and our team will contact you regarding availability.
+    </p>
+  </div>
+  <a href="contact.html" class="btn primary">Request Appointment</a>
+</section>
+</main>
+<footer class="site-footer">
+  <div>
+    <a href="index.html" class="footer-logo">Chiro One <span>Sports & Spine</span></a>
+    <p>Chiropractic care, auto accident treatment, and physical therapy in Dearborn.</p>
+  </div>
+  <div>
+    <p>Auto Accident • Back Pain • Neck Pain • Physical Therapy • Wellness</p>
+  </div>
+  <div>
+    <p>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
 
+Next file: styles.css.
