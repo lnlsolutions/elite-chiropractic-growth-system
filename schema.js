@@ -14,11 +14,11 @@ const localBusinessSchema = {
 
   "telephone": "+1-313-644-0440",
 
-  "email": "Elitechirocenter1@gmail.com",
+  "email": "ChiroOneSS@gmail.com",
 
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "6 Park Ln Blvd Bldg #6",
+    "streetAddress": "6 Park Ln Blvd Suite 100",
     "addressLocality": "Dearborn",
     "addressRegion": "MI",
     "postalCode": "48126",
@@ -102,7 +102,7 @@ const physicianSchema = {
 
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "6 Park Ln Blvd",
+    "streetAddress": "6 Park Ln Blvd Suite 100",
     "addressLocality": "Dearborn",
     "addressRegion": "MI",
     "postalCode": "48126",
