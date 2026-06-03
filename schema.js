@@ -102,7 +102,7 @@ const physicianSchema = {
 
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "6 Park Ln Blvd Suite 100",
+    "streetAddress": "6 Parklane Blvd Suite 100",
     "addressLocality": "Dearborn",
     "addressRegion": "MI",
     "postalCode": "48126",
